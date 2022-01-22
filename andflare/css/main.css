@@ -1,0 +1,178 @@
+.front-page {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
+}
+.front-page::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.down-stripe {
+  background: #09ce37;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
+  z-index: 10;
+}
+.down-stripe:hover {
+  text-decoration: none;
+  color: white;
+  background: #059627;
+}
+
+.btn-green {
+  background: #09ce37;
+  border: 0;
+}
+.btn-green:hover {
+  background: #059627;
+  border: 0;
+}
+
+.btn-green:focus {
+  background: #059627;
+  border: 0;
+  outline: none;
+}
+.btn-green:active {
+  background: #059627;
+  border: 0;
+  outline: none;
+}
+.btn-green:focus:hover {
+  background: #059627;
+  border: 0;
+  outline: none;
+}
+.btn-green:focus:active {
+  background: #059627;
+  border: 0;
+  outline: none;
+}
+.font-page-content {
+  z-index: 100;
+  color: white;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
+  text-align: center;
+  width: 400px;
+}
+.font-page-content h1 {
+  font-size: 30px;
+  line-height: 42px;
+}
+.font-page-content input {
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.3);
+  border: 0;
+  color: white;
+  padding: 23px 13px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
+  padding-left: 137px;
+  color: white;
+  font-size: 19px;
+}
+.font-page-content input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.font-page-content input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.font-page-content input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+.font-page-content .form-group {
+  position: relative;
+}
+.font-page-content .form-group:before {
+  content: "andflare.com/";
+  color: #0fff4b;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 11px;
+  top: 9px;
+}
+.font-page-content button {
+  font-weight: 400;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 11px;
+}
+.or {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.or:before {
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+.or:after {
+  content: "";
+  width: 45%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+
+.font-page-content small {
+  font-size: 14px;
+}
+.font-page-content small a {
+  color: white;
+  text-decoration: underline;
+}
+.font-page-content small a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.bg1 {
+  background-image: url("../img/dummy-images/woodcuts_2.jpeg");
+}
+.bg2 {
+  background-image: url("../img/dummy-images/woodcuts_1.jpeg");
+}
+.bg3 {
+  background-image: url("../img/dummy-images/bg3.jpeg");
+}
+.bg4 {
+  background-image: url("../img/dummy-images/bg4.jpeg");
+}
