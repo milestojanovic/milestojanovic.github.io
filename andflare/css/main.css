@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   min-height: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .front-page::before {
   content: "";
@@ -175,4 +177,35 @@
 }
 .bg4 {
   background-image: url("../img/dummy-images/bg4.jpeg");
+}
+
+.front-navigation {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.front-navigation .nav-items {
+  background: white;
+  color: black;
+  border-radius: 4px;
+}
+
+.front-navigation .nav-items a {
+    padding: 8px 17px;
+    border-right: 1px solid #cfcfcf;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.front-navigation .nav-items a:hover{
+    text-decoration: none;
+    background:#f1f1f1;
+}
+.front-navigation .nav-items a:last-child {
+  border-right: 0;
 }
