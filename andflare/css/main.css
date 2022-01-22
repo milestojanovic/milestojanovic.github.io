@@ -193,6 +193,8 @@
   background: white;
   color: black;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
 }
 
 .front-navigation .nav-items a {
@@ -227,15 +229,15 @@
 }
 .search-form .from-group {
   display: inline-block;
-  width: 40%;
+  width: 50%;
   position: relative;
 }
 
-.search-form .from-group  img{
-    width: 20px;
-    position: absolute;
-    left: 10px;
-    top: 9px;
+.search-form .from-group img {
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 9px;
 }
 
 .search-form input::placeholder {
@@ -251,4 +253,24 @@
 
 .search-form input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.681);
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-form .from-group {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .search-form .from-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .front-navigation {
+    display: block;
+  }
+  .front-navigation .nav-items a {
+    flex: 1;
+    text-align: center;
+    padding: 11px 0px;
+  }
 }
