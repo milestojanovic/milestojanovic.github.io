@@ -271,11 +271,25 @@
   z-index: 1000;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 .trending-title img {
   margin-right: 5px;
   width: 20px;
+}
+.trending-title span{
+    width: 100%;
+    text-align: right;
+    margin-top: -19px;
+    font-size: 14px;
+    margin-right: 11%;
+    
+}
+.trending-title span img{
+    margin-right: 0;
+    margin-left: 5px;
+    border-radius: 5px;
 }
 .trending-slide {
   width: 90%;
@@ -432,6 +446,10 @@
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;
+  }
+  .trending-title span {
+    margin-top: 10px;
+    margin-right: 13%;
   }
 }
 @media only screen and (max-width: 768px) {
