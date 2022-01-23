@@ -3,6 +3,8 @@ var randomnumber = Math.floor(Math.random() * classes.length);
 
 $(".front-page").addClass(classes[randomnumber]);
 
+
+
 $(document).ready(function() {
   $(".trending-slide").slick({
     slidesToShow: 9,

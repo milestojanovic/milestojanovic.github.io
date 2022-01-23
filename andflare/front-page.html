@@ -60,8 +60,8 @@
           <a href="#">Help</a>
           <a href="#">Products</a>
           <a href="#">Company</a>
-          <a href="#">Sign up</a>
-          <a href="#">Log in</a>
+          <a href="#" data-toggle="modal" data-target="#signupModal">Sign up</a>
+          <a href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
         </div>
       </div>
       <div class="font-page-content">
@@ -78,7 +78,7 @@
               placeholder="username"
             />
           </div>
-          <button type="submit" class="btn btn-primary btn-green">
+          <button type="submit" data-toggle="modal" data-target="#signupModal" class="btn btn-primary btn-green">
             Sign up
           </button>
         </form>
@@ -302,6 +302,43 @@
         What is Andflare?
       </a>
     </div>
+    <div class="modal fade signup-login" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Andflare - Log in</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade signup-login" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Andflare - Sign up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+             
+              </div>
+            </div>
+          </div>
+        </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

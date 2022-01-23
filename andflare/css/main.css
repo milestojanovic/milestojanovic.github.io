@@ -86,8 +86,8 @@ html {
   width: 400px;
 }
 .font-page-content h1 {
-    font-size: 28px;
-    line-height: 32px;
+  font-size: 28px;
+  line-height: 32px;
 }
 .font-page-content input {
   font-weight: 400;
@@ -468,8 +468,8 @@ html {
   box-shadow: none;
   height: 33px;
 }
-.search-form form{
-    width: 100%;
+.search-form form {
+  width: 100%;
 }
 .search-form .dropdown button:hover {
   color: #fff;
@@ -497,6 +497,63 @@ html {
   border: 0;
   box-shadow: none;
 }
+.modal{
+  backdrop-filter: blur(7px);
+ 
+}
+
+.card-box {
+  background: white;
+  border-radius: 5px;
+  width: 400px;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.modal-header{
+    display: flex;
+    -webkit-box-shadow:  0px 2px 6px -2px  rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0px 2px 6px -2px  rgba(0,0,0,0.16);
+    box-shadow: 0px 2px 6px -2px rgb(0 0 0 / 16%);
+}
+
+
+.modal-title{
+    flex: 1;
+    text-align: center;
+}
+.signup-login{
+    padding-top: 200px;
+}
+.signup-login .modal-dialog{
+width: 500px;
+}
+.signup-login .modal-dialog h5{
+    font-size: 18px;
+}
+.modal-header .close{
+    opacity: 1;
+}
+
+.modal-header .close span{
+    background: #dddddd;
+    color: #333333;
+    opacity: 1;
+    text-shadow: none;
+    padding: 3px 8px;
+    padding-top: 0px;
+    border-radius: 5px;
+}
+
+
+
+
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;
@@ -529,8 +586,8 @@ html {
   .search-form .from-group {
     width: 100%;
   }
-  .search-form{
-      margin-bottom: 15px;
+  .search-form {
+    margin-bottom: 15px;
   }
   .front-navigation {
     display: block;
