@@ -1,6 +1,7 @@
-body,html{
-    overflow-x: hidden;
-    width: 100%;
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 .front-page {
   background-size: cover;
@@ -85,19 +86,19 @@ body,html{
   width: 400px;
 }
 .font-page-content h1 {
-  font-size: 30px;
-  line-height: 42px;
+    font-size: 28px;
+    line-height: 32px;
 }
 .font-page-content input {
   font-weight: 400;
   background: rgba(255, 255, 255, 0.3);
   border: 0;
   color: white;
-  padding: 23px 13px;
+  padding: 21px 13px;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
-  padding-left: 137px;
+  padding-left: 125px;
   color: white;
-  font-size: 19px;
+  font-size: 17px;
 }
 .font-page-content input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -120,20 +121,20 @@ body,html{
 .font-page-content .form-group:before {
   content: "andflare.com/";
   color: #0fff4b;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   position: absolute;
   left: 11px;
-  top: 9px;
+  top: 8px;
 }
 .font-page-content button {
   font-weight: 400;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   width: 100%;
   border: 0;
-  padding: 11px;
+  padding: 8px;
 }
 .or {
   position: relative;
@@ -163,7 +164,7 @@ body,html{
 }
 
 .font-page-content small {
-  font-size: 14px;
+  font-size: 12px;
 }
 .font-page-content small a {
   color: white;
@@ -209,7 +210,7 @@ body,html{
   display: inline-block;
   color: black;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
 }
 .front-navigation .nav-items a:hover {
   text-decoration: none;
@@ -221,15 +222,18 @@ body,html{
 
 .search-form {
   flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .search-form input {
   font-weight: 400;
   background: rgba(255, 255, 255, 0.3);
   border: 1px solid rgb(255 255 255 / 44%);
   color: white;
-  padding: 20px 13px;
+  padding: 18px 13px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 45px;
   letter-spacing: 2px;
   z-index: 2;
@@ -237,15 +241,18 @@ body,html{
 }
 .search-form .from-group {
   display: inline-block;
-  width: 50%;
+  width: 500px;
   position: relative;
+}
+.search-form .dropdown {
+  margin-right: 10px;
 }
 
 .search-form .from-group img {
-  width: 20px;
+  width: 19px;
   position: absolute;
   left: 10px;
-  top: 11px;
+  top: 10px;
   z-index: 1;
 }
 
@@ -282,18 +289,17 @@ body,html{
   margin-right: 5px;
   width: 20px;
 }
-.trending-title span{
-    width: 100%;
-    text-align: right;
-    margin-top: -19px;
-    font-size: 14px;
-    margin-right: 11%;
-    
+.trending-title span {
+  width: 100%;
+  text-align: right;
+  margin-top: -19px;
+  font-size: 14px;
+  margin-right: 11%;
 }
-.trending-title span img{
-    margin-right: 0;
-    margin-left: 5px;
-    border-radius: 5px;
+.trending-title span img {
+  margin-right: 0;
+  margin-left: 5px;
+  border-radius: 5px;
 }
 .trending-slide {
   width: 90%;
@@ -301,7 +307,7 @@ body,html{
 }
 .trending-card {
   border-radius: 5px;
-  padding: 20px 10px;
+  padding: 15px 10px;
   margin-left: 10px;
   margin-right: 10px;
   transition: all 0.15s ease-in-out;
@@ -314,7 +320,6 @@ body,html{
   overflow-y: visible !important;
   padding-bottom: 28px;
 }
-
 
 .trending-card span {
   margin-bottom: 15px;
@@ -341,7 +346,7 @@ body,html{
   width: 100%;
   border: 0;
   outline: 0;
-  padding: 10px;
+  padding: 6px;
   font-size: 16px;
   margin-top: 15px;
   display: block;
@@ -447,6 +452,51 @@ body,html{
 .paginator-center .prev:hover {
   cursor: pointer;
 }
+.dropdown-menu {
+  -webkit-box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.5);
+}
+.search-form .dropdown button {
+  background: none;
+  color: rgb(255 255 255 / 76%);
+  font-size: 40px;
+  padding: 0;
+  line-height: 20px;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  height: 33px;
+}
+.search-form form{
+    width: 100%;
+}
+.search-form .dropdown button:hover {
+  color: #fff;
+}
+.search-form .dropdown button:focus {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+.search-form .dropdown-item {
+  width: 100%;
+  display: block;
+  padding: 8px 5px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+
+.search-form .dropdown-item:hover {
+  text-decoration: none;
+  background: #f7f5f5;
+}
+.search-form .dropdown button:active {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;
@@ -478,7 +528,9 @@ body,html{
   }
   .search-form .from-group {
     width: 100%;
-    margin-bottom: 15px;
+  }
+  .search-form{
+      margin-bottom: 15px;
   }
   .front-navigation {
     display: block;
@@ -494,6 +546,7 @@ body,html{
   }
   .font-page-content h1 {
     font-size: 24px;
+    line-height: 28px;
   }
   .down-stripe {
     margin-top: 30px;
