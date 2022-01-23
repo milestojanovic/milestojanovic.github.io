@@ -497,9 +497,8 @@ html {
   border: 0;
   box-shadow: none;
 }
-.modal{
+.modal {
   backdrop-filter: blur(7px);
- 
 }
 
 .card-box {
@@ -516,43 +515,152 @@ a:focus {
   text-decoration: none;
 }
 
-.modal-header{
-    display: flex;
-    -webkit-box-shadow:  0px 2px 6px -2px  rgb(0 0 0 / 16%);
-    -moz-box-shadow: 0px 2px 6px -2px  rgba(0,0,0,0.16);
-    box-shadow: 0px 2px 6px -2px rgb(0 0 0 / 16%);
+.modal-header {
+  display: flex;
+  -webkit-box-shadow: 0px 2px 6px -2px rgb(0 0 0 / 16%);
+  -moz-box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 2px 6px -2px rgb(0 0 0 / 16%);
 }
 
-
-.modal-title{
-    flex: 1;
-    text-align: center;
+.modal-title {
+  flex: 1;
+  text-align: center;
 }
-.signup-login{
-    padding-top: 200px;
+.signup-login {
+  padding-top: 100px;
 }
-.signup-login .modal-dialog{
-width: 500px;
+.signup-login .modal-dialog {
+  width: 450px;
 }
-.signup-login .modal-dialog h5{
-    font-size: 18px;
+.signup-login .modal-dialog h5 {
+  font-size: 18px;
 }
-.modal-header .close{
-    opacity: 1;
-}
-
-.modal-header .close span{
-    background: #dddddd;
-    color: #333333;
-    opacity: 1;
-    text-shadow: none;
-    padding: 3px 8px;
-    padding-top: 0px;
-    border-radius: 5px;
+.modal-header .close {
+  opacity: 1;
 }
 
+.modal-header .close span {
+  background: #dddddd;
+  color: #333333;
+  opacity: 1;
+  text-shadow: none;
+  padding: 3px 8px;
+  padding-top: 0px;
+  border-radius: 5px;
+}
+.signup-login .modal-body {
+  padding: 80px 50px;
+  padding-bottom: 60px;
+}
+.signup-login .modal-body span {
+  color: #b5b4b2;
+  font-size: 14px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.signup-login .modal-body .form-control {
+  background: #f7f7f5;
+  padding: 24px 15px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 8px;
+}
+.signup-login .modal-body small {
+  color: #b5b4b2;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.signup-login .modal-body small img {
+  margin-right: 5px;
+}
+.signup-login .modal-body small a {
+  display: flex;
+  align-items: center;
+  color: #b5b4b2;
+}
+.signup-login .modal-body .down-part {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.signup-login .modal-body .down-part img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.signup-login .modal-footer {
+  position: relative;
+}
+.signup-login .modal-footer a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-top: 5px;
+}
+.signup-login .modal-footer a img {
+  margin-left: 5px;
+  width: 15px;
+}
+.signup-login .modal-footer a:hover {
+  text-decoration: none;
+}
+.signup-login .modal-body .form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
 
+.signup-login .modal-body .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
 
+.signup-login .modal-body .form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+.signup-login .modal-body button {
+  font-weight: 400;
+  text-shadow: 1px 2px 4px rgb(0 0 0 / 20%);
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 12px;
+}
+
+.modal-footer .tooltip-static {
+  background: #7360e0;
+  color: white;
+  position: absolute;
+  top: -25px;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  width: 56px;
+  text-align: center;
+  padding: 7px 9px;
+  display: inline-block;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+.modal-footer .tooltip-static::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  margin-left: -37px;
+  transform: translateY(-50%);
+  border: 10px solid #7360df;
+  border-color: #7360df transparent transparent transparent;
+  bottom: -28px;
+}
 
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
@@ -609,6 +717,12 @@ width: 500px;
     margin-top: 30px;
     position: relative;
     display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+.signup-login .modal-dialog {
     width: 100%;
   }
 }
