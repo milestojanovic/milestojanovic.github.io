@@ -8,9 +8,10 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
+  min-height: 800px;
   padding-left: 15px;
   padding-right: 15px;
+  flex-wrap: wrap;
 }
 
 .front-page::before {
@@ -219,7 +220,7 @@
 .search-form input {
   font-weight: 400;
   background: rgba(255, 255, 255, 0.3);
-  border: 0;
+  border: 1px solid rgb(255 255 255 / 44%);
   color: white;
   padding: 20px 13px;
   color: white;
@@ -237,7 +238,7 @@
   width: 20px;
   position: absolute;
   left: 10px;
-  top: 9px;
+  top: 11px;
 }
 
 .search-form input::placeholder {
@@ -253,6 +254,131 @@
 
 .search-form input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.681);
+}
+.trending-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
+  text-align: center;
+  position: relative;
+  z-index:1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trending-title img{
+    margin-right: 5px;
+    width: 20px;
+}
+.trending-slide {
+  width: 90%;
+  margin: 0 auto;
+}
+.trending-card {
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.trending-card span {
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: block;
+}
+.trending-card .grid-images {
+  display: flex;
+}
+.trending-card .grid-images div {
+  height: 99px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+.trending-card .grid-images div:first-child {
+  margin-right: 5px;
+}
+.trending-card .grid-images div:last-child {
+  margin-left: 5px;
+}
+
+.trending-card button {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+.kaka {
+  background: #765322;
+  color: white;
+}
+.kaka button {
+  color: #765322;
+  background: white;
+}
+.red {
+  background: #802815;
+  color: white;
+}
+.red button {
+  color: #802815;
+  background: white;
+}
+.orange {
+  background: #fd9e07;
+  color: #000;
+}
+.orange button {
+  background: #000;
+  color: #fd9e07;
+}
+.kaka-light {
+  background: #805d22;
+  color: white;
+}
+.kaka-light button {
+  background: #fff;
+  color: #805d22;
+}
+.geen-yellow {
+  background: #a38c27;
+  color: black;
+}
+.geen-yellow button {
+  color: #a38c27;
+  background: black;
+}
+.pink {
+  background: #e51140;
+  color: white;
+}
+.pink button {
+  background: #fff;
+  color: #e51140;
+}
+.orange-dark {
+  background: #d26d03;
+  color: #000;
+}
+.orange-dark button {
+  background: #000;
+  color: #d26d03;
+}
+.green {
+  background: #617324;
+  color: white;
+}
+.green button {
+  background: #fff;
+  color: #617324;
 }
 
 @media only screen and (max-width: 1024px) {
