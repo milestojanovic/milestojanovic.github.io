@@ -723,6 +723,11 @@ a:focus {
 
 @media only screen and (max-width: 460px) {
 .signup-login .modal-dialog {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
+  .signup-login .modal-body {
+    padding: 41px 21px;
+    padding-bottom: 60px;
+}
 }
