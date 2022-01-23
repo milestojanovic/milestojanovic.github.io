@@ -12,6 +12,7 @@
   padding-left: 15px;
   padding-right: 15px;
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .front-page::before {
@@ -227,6 +228,8 @@
   font-size: 16px;
   padding-left: 45px;
   letter-spacing: 2px;
+  z-index: 2;
+  position: relative;
 }
 .search-form .from-group {
   display: inline-block;
@@ -239,6 +242,7 @@
   position: absolute;
   left: 10px;
   top: 11px;
+  z-index: 1;
 }
 
 .search-form input::placeholder {
@@ -282,7 +286,17 @@
   padding: 20px 10px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.15s ease-in-out;
 }
+.trending-card:hover {
+  transform: translateY(6.354%) rotate(5deg) scale(1.033);
+}
+
+.trending-slide .slick-list {
+  overflow-y: visible !important;
+  padding-bottom: 28px;
+}
+
 
 .trending-card span {
   margin-bottom: 15px;
@@ -380,16 +394,58 @@
   background: #fff;
   color: #617324;
 }
+.blur-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  border-radius: 3px;
 
+  backdrop-filter: blur(6px);
+  z-index: 0;
+  opacity: 0.8;
+}
+.paginator-center {
+  z-index: 100;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.paginator-center .next {
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: -152px;
+}
+.paginator-center .prev {
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: -152px;
+}
+.paginator-center .next:hover {
+  cursor: pointer;
+}
+.paginator-center .prev:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;
   }
 }
 @media only screen and (max-width: 768px) {
+  .paginator-center .next {
+    right: -5px;
+  }
+  .paginator-center .prev {
+    left: -5px;
+  }
   .front-page {
     display: block;
     padding: 0;
+    min-height: 100%;
+    height: 100%;
   }
   .font-page-content {
     width: 100%;
@@ -417,7 +473,7 @@
   .font-page-content h1 {
     font-size: 24px;
   }
-  .down-stripe{
+  .down-stripe {
     margin-top: 30px;
     position: relative;
     display: block;

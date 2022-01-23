@@ -9,6 +9,8 @@ $(document).ready(function() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
     responsive: [
       {
         breakpoint: 1600,
