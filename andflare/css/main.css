@@ -662,6 +662,78 @@ a:focus {
   bottom: -28px;
 }
 
+.main-page {
+  padding: 40px 50px;
+}
+.search-banner {
+  background-image: url("../img/1a23068e966efce6fb32ca9fecc65eed.svg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  border-radius: 10px;
+  width: 100%;
+}
+.top-message {
+  background: #373c45;
+  margin-bottom: 0;
+  border-radius: 0;
+  color: #7b7c81;
+  text-align: center;
+}
+.top-message strong {
+  color: white;
+  font-weight: 400;
+}
+.top-message .close {
+  float: right;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1;
+  color: #999c9f;
+  text-shadow: none;
+  filter: alpha(opacity=20);
+  opacity: 1;
+  line-height: 14px;
+}
+.top-message .close:hover {
+  color: #fff;
+}
+body {
+  background: #f7f7f7;
+}
+
+.horizontal-scroll-nav {
+  display: block;
+  width: 100%;
+  wrap: nowrap;
+  overflow-x: scroll;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.horizontal-scroll-nav a {
+  background: #ebebeb;
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  border-radius: 50px;
+  margin-right: 15px;
+  padding: 5px 25px;
+  color: black;
+  font-size: 18px;
+}
+.horizontal-scroll-nav a:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+.horizontal-scroll-nav::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.horizontal-scroll-nav::-webkit-scrollbar-thumb {
+  background: none;
+}
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;
@@ -722,12 +794,12 @@ a:focus {
 }
 
 @media only screen and (max-width: 560px) {
-.signup-login .modal-dialog {
+  .signup-login .modal-dialog {
     width: 90%;
     margin: 0 auto;
   }
   .signup-login .modal-body {
     padding: 41px 21px;
     padding-bottom: 60px;
-}
+  }
 }

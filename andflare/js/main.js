@@ -5,7 +5,9 @@ $(".front-page").addClass(classes[randomnumber]);
 
 
 
+
 $(document).ready(function() {
+  $('#myToast').toast('dispose');
   $(".trending-slide").slick({
     slidesToShow: 9,
     slidesToScroll: 1,
