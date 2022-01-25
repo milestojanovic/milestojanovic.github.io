@@ -240,6 +240,7 @@ html {
   padding-left: 45px;
   letter-spacing: 1px;
   z-index: 2;
+  border: 0;
   position: relative;
 }
 .search-form .from-group {
@@ -680,6 +681,7 @@ a:focus {
   min-height: 500px;
   border-radius: 10px;
   width: 100%;
+  position: relative;
 }
 .top-message {
   background: #373c45;
@@ -841,9 +843,11 @@ body {
 .nav-menu {
   width: 100%;
   justify-content: right !important;
+  flex-grow: inherit;
 }
 .notification {
   margin-left: 15px;
+  min-width: 220px;
 }
 .notification label {
   background: #65ff39;
@@ -874,7 +878,9 @@ body {
 }
 .middle-content{
   text-align: center;
-  margin-top: 85px;
+  position: absolute;
+  width: 100%;
+  top: 150px;
 }
 .middle-content h1{
   color: white;
@@ -884,6 +890,21 @@ body {
     text-shadow: 1px 2px 4px rgb(0 0 0 / 42%);
     font-size: 40px;
     line-height: 51px;
+}
+.navigation-page .search-bar{
+  display: none;
+}
+.navigation-page.show-bar .search-bar{
+  display: inline-block;
+  margin-left: 20px;
+}
+.fixed-nav{
+  top: 0;
+  position: fixed !important;
+  background: #4e1bf4;
+  left: 0;
+  padding: 5px 94px;
+  z-index: 9999999;
 }
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {

@@ -3,6 +3,20 @@ var randomnumber = Math.floor(Math.random() * classes.length);
 
 $(".front-page").addClass(classes[randomnumber]);
 
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 120) {
+    $(".navigation-page").addClass("fixed-nav");
+  } else {
+    $(".navigation-page").removeClass("fixed-nav");
+  }
+  if (scroll >= 350) {
+    $(".navigation-page").addClass("show-bar");
+} else {
+    $(".navigation-page").removeClass("show-bar");
+}
+});
 
 $(document).ready(function() {
   $(".trending-slide").slick({
