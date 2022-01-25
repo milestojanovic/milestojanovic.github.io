@@ -234,13 +234,11 @@ html {
 .search-form input {
   font-weight: 400;
   background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgb(255 255 255 / 44%);
+  padding: 20px 13px;
   color: white;
-  padding: 18px 13px;
-  color: white;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 45px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   z-index: 2;
   position: relative;
 }
@@ -263,17 +261,17 @@ html {
 
 .search-form input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(255, 255, 255, 0.681);
+  color: white;
   opacity: 1; /* Firefox */
 }
 
 .search-form input:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgba(255, 255, 255, 0.681);
+  color: white;
 }
 
 .search-form input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.681);
+  color: white;
 }
 .trending-title {
   margin-top: 20px;
@@ -873,6 +871,19 @@ body {
   border: 10px solid #fedd01;
   border-color: transparent #fedd01 transparent transparent;
   bottom: -4px;
+}
+.middle-content{
+  text-align: center;
+  margin-top: 85px;
+}
+.middle-content h1{
+  color: white;
+    width: 38%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-shadow: 1px 2px 4px rgb(0 0 0 / 42%);
+    font-size: 40px;
+    line-height: 51px;
 }
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
