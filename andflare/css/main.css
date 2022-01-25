@@ -43,6 +43,11 @@ html {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
   z-index: 10;
 }
+.relative.down-stripe{
+position: relative;
+width: 100%;
+display: block;
+}
 .down-stripe:hover {
   text-decoration: none;
   color: white;
@@ -468,6 +473,10 @@ html {
   box-shadow: none;
   height: 33px;
 }
+.dropdown {
+  z-index: 10000;
+  position: relative;
+}
 .search-form form {
   width: 100%;
 }
@@ -479,7 +488,7 @@ html {
   border: 0;
   box-shadow: none;
 }
-.search-form .dropdown-item {
+.dropdown-item {
   width: 100%;
   display: block;
   padding: 8px 5px;
@@ -488,11 +497,12 @@ html {
   color: black;
 }
 
-.search-form .dropdown-item:hover {
+.dropdown-item:hover {
   text-decoration: none;
   background: #f7f5f5;
+  color: #000;
 }
-.search-form .dropdown button:active {
+.dropdown button:active {
   outline: none;
   border: 0;
   box-shadow: none;
@@ -663,7 +673,7 @@ a:focus {
 }
 
 .main-page {
-  padding: 40px 50px;
+  padding: 40px 80px;
 }
 .search-banner {
   background-image: url("../img/1a23068e966efce6fb32ca9fecc65eed.svg");
@@ -734,6 +744,102 @@ body {
 .horizontal-scroll-nav::-webkit-scrollbar-thumb {
   background: none;
 }
+
+.main-page .trending-slide{
+width: 100%;
+margin: 0;
+}
+.main-page .paginator-center .next{
+  right: 10px;
+}
+.main-page .paginator-center .prev{
+  left: 10px;
+}
+.sort-nav{
+  color: #7e8183;
+    text-align: center;
+    margin: 25px 10px;
+}
+.sort-nav a {
+  color: #7e8183;
+  border-radius: 30px;
+  padding: 8px 31px;
+  font-weight: 500;
+  font-size: 17px;
+  display: inline-block;
+}
+.sort-nav a:hover{
+  background: #ededed;
+  text-decoration: none;
+  color: #7e8183;
+}
+.sort-nav a.active{
+  color: #0279d2;
+}
+
+
+.grid-cards .grid-card {
+width: 375px;
+
+  background-color: #e9e9e9;
+
+  border-radius: 8px;
+}
+.grid-cards .grid-card {
+  position: relative;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.grid-cards .grid-card img{
+width: 100%;
+}
+.card-head {
+padding: 12px;
+}
+.card-head .profile-image{
+  width: 35px !important;
+  border-radius: 5px;
+}
+.card-head span{
+  font-weight: bold;
+  color: black;
+  margin-left: 5px;
+}
+
+
+
+.card-head .dropdown{
+  display: inline-block;
+  float: right;
+  background: none;
+}
+
+.card-head .dropdown button{
+  background: none;
+  font-size: 29px;
+  padding: 0;
+  line-height: 28px;
+}
+
+.card-head .dropdown button:focus{
+  outline: none;
+ }
+ .card-head .dropdown button:active{
+  outline: none;
+ }
+
+ .card-footer{
+   padding: 10px 20px;
+ }
+ .card-footer a{
+  color: #585858;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 6px;
+ }
+
+
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;

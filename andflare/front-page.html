@@ -34,7 +34,7 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-            ···
+              ···
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">Example one</a>
@@ -78,7 +78,12 @@
               placeholder="username"
             />
           </div>
-          <button type="submit" data-toggle="modal" data-target="#signupModal" class="btn btn-primary btn-green">
+          <button
+            type="submit"
+            data-toggle="modal"
+            data-target="#signupModal"
+            class="btn btn-primary btn-green"
+          >
             Sign up
           </button>
         </form>
@@ -302,65 +307,115 @@
         What is Andflare?
       </a>
     </div>
-    <div class="modal fade signup-login" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="loginModalLabel">Andflare - Log in</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+    <div
+      class="modal fade signup-login"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Andflare - Log in</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="mb-5">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  ><a href="#"
+                    ><img src="img/question-circle.svg" />Learn about exporting
+                    members.</a
+                  ></small
+                >
+              </div>
+              <button type="submit" class="btn btn-primary btn-green">
+                Recieve magic link
               </button>
+            </form>
+            <div class="down-part">
+              <img src="img/logo-purple.svg" />
+              <span>Learn about exporting <br />about exporting members.</span>
             </div>
-            <div class="modal-body">
-                <form class="mb-5">
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                      <small id="emailHelp" class="form-text text-muted"><a href="#"><img src="img/question-circle.svg"/>Learn about exporting members.</a></small>
-                    </div> 
-                    <button type="submit" class="btn btn-primary btn-green">Recieve magic link</button>
-                  </form>
-                  <div class="down-part">
-                  <img src="img/logo-purple.svg"/>
-                  <span>Learn about exporting <br>about exporting members.</span>
-                </div>
-            </div>
-            <div class="modal-footer ">
-              <span class="tooltip-static">New</span>
-              <a href="#">Instagram <img src="img/ARROW-UP-RIGHT-ICON.svg"/></a>
-            </div>
+          </div>
+          <div class="modal-footer ">
+            <span class="tooltip-static">New</span>
+            <a href="#">Instagram <img src="img/ARROW-UP-RIGHT-ICON.svg"/></a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="modal fade signup-login" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="loginModalLabel">Andflare - Sign up</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <form class="mb-5">
-                        <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                          <small id="emailHelp" class="form-text text-muted"><a href="#"><img src="img/question-circle.svg"/>Learn about exporting members.</a></small>
-                        </div> 
-                        <button type="submit" class="btn btn-primary btn-green">Recieve magic link</button>
-                      </form>
-                      <div class="down-part">
-                      <img src="img/logo-purple.svg"/>
-                      <span>Learn about exporting <br>about exporting members.</span>
-                    </div>
-                </div>
-                <div class="modal-footer ">
-                  <span class="tooltip-static">New</span>
-                  <a href="#">Instagram <img src="img/ARROW-UP-RIGHT-ICON.svg"/></a>
-                </div>
+    <div
+      class="modal fade signup-login"
+      id="signupModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Andflare - Sign up</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="mb-5">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  ><a href="#"
+                    ><img src="img/question-circle.svg" />Learn about exporting
+                    members.</a
+                  ></small
+                >
               </div>
+              <button type="submit" class="btn btn-primary btn-green">
+                Recieve magic link
+              </button>
+            </form>
+            <div class="down-part">
+              <img src="img/logo-purple.svg" />
+              <span>Learn about exporting <br />about exporting members.</span>
             </div>
+          </div>
+          <div class="modal-footer ">
+            <span class="tooltip-static">New</span>
+            <a href="#">Instagram <img src="img/ARROW-UP-RIGHT-ICON.svg"/></a>
+          </div>
         </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -372,5 +427,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+  
   </body>
 </html>
