@@ -906,6 +906,67 @@ body {
   padding: 5px 94px;
   z-index: 9999;
 }
+.search-form{
+  margin: 0;
+    padding: 0;
+}
+.search-form input{
+  font-weight: 400  !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  padding: 10px 13px  !important;
+  color: white  !important;
+  font-size: 16px  !important;
+  letter-spacing: 1px  !important;
+  border: 0  !important;
+  border-top-right-radius: 3px !important;;
+  border-bottom-right-radius: 3px !important;;
+}
+.search-form input.typeahead__hint{
+ background: transparent !important;
+}
+.search-form .typeahead__search-icon {
+  padding: 10px;
+  width: 16px;
+  height: 16px;
+  background: url('../img/search-white.svg') no-repeat scroll center center;
+  color: white;
+  background-color: none !important;
+}
+.search-form .typeahead__button button{
+  background: rgba(255, 255, 255, 0.3) !important;
+  color: white;
+  border: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 100%;
+  padding-left: 13px;
+}
+.typeahead__container *{
+  font-size: 18px;
+}
+.front-navigation .typeahead__container{
+  width: 500px;
+}
+.typeahead__group[data-search-group="general"] {
+  display: none !important;
+}
+.typeahead__list>.typeahead__group.active>a, .typeahead__list>.typeahead__group>a, .typeahead__list>.typeahead__group>a:focus, .typeahead__list>.typeahead__group>a:hover {
+
+  background: #ededed !important;
+  font-weight: 400 !important;
+  color: #555555 !important;
+  font-size: 18px !important;
+}
+.typeahead__list>li {
+  position: relative;
+  border-top: 0 !important;
+}
+.search-banner .typeahead__container{
+  width: 500px;
+}
+.search-banner .middle-form{
+  justify-content: center;
+}
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
     width: 90%;
@@ -916,6 +977,12 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .front-navigation .typeahead__container{
+    width: 100%;
+  }
+  .search-banner .typeahead__container{
+    width: 100%;
+  }
   .main-page {
     padding: 20px 20px;
   }

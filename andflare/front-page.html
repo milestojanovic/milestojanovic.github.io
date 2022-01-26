@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/jquery.typeahead.min.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +43,7 @@
               <a class="dropdown-item" href="#">Example three</a>
             </div>
           </div>
-          <form>
+          <!-- <form>
             <div class="from-group">
               <img src="img/search-white.svg" />
               <div class="blur-bg"></div>
@@ -54,6 +55,29 @@
                 aria-describedby="search"
               />
             </div>
+          </form> -->
+          <form class="navbar-form navbar-left search-form">
+            <div class="typeahead__container">
+              <div class="typeahead__field">
+                <span class="typeahead__button">
+                  <button class="btn btn-default" type="submit">
+                    <span class="typeahead__search-icon"></span>
+                  </button>
+                </span>
+                <span class="typeahead__query">
+                  <span class="typeahead__cancel-button"></span
+                  ><input
+                    class="js-typeahead"
+                    name="q"
+                    type="search"
+                    autofocus=""
+                    autocomplete="off"
+                    placeholder="Search Andflare"
+                  />
+                </span>
+              </div>
+              
+            </div>
           </form>
         </div>
         <div class="nav-items">
@@ -64,9 +88,11 @@
           <a href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
         </div>
       </div>
+
       <div class="font-page-content">
         <img src="img/logo-white.svg" width="150px" />
         <h1>Make stuff, look at stuff, talk about stuff, find your people</h1>
+
         <form>
           <div class="form-group">
             <input
@@ -427,6 +453,138 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-  
+    <script src="js/jquery.typeahead.min.js"></script>
+
+    <script>
+      var data = {
+        general: [
+          "Belhaven Black Scottish Stout",
+          "Guinness Draught Bottle",
+          "Guinness Extra Stout",
+          "Guinness Pub Draught",
+          "Murphys Irish Stout",
+          "Muskoka Chocolate Cranberry",
+          "Sleeman Fine Porter"
+        ],
+        Andflares: [
+          "Boxer Watermelon",
+          "Bud Light Lime Lime-a-rita",
+          "Bud Light Lime Mang-o-rita",
+          "Bud Light Lime Straw-ber-rita",
+          "Colt 45",
+          "DJ Trotters Flirty Daiquiri",
+          "DJ Trotters Lolita",
+          "Four Loko Black Cherry",
+          "Four Loko Fruit Punch",
+          "Four Loko Grape",
+          "Four Loko Lemonade",
+          "Four Loko Peach",
+          "Four Loko Watermelon",
+          "Kensington Watermelon Wheat",
+          "Mad Jack",
+          "Mickeys",
+          "Mojo Fruit Punch",
+          "Mojo Shot Blue Lagoon",
+          "Mojo Shot Melon Ball",
+          "Mojo Shot Sourberry",
+          "Mojo Strawberry & Kiwi",
+          "Mons Abbey Blonde",
+          "Mons Abbey Witte",
+          "Olde English 800",
+          "Pepito Sangria",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Seagram Iced Lemon Tea",
+          "Seagram Lemon Lime",
+          "Seagram Orange Mango",
+          "Seagram Wildberry",
+          "Seagram Wildberry Extra 6.9",
+          "Twisted Tea",
+          "Wellington Iron Duke"
+        ]
+      };
+
+      typeof $.typeahead === "function" &&
+        $.typeahead({
+          input: ".js-typeahead",
+          minLength: 1,
+          maxItem: false,
+          order: "asc",
+          hint: true,
+
+          group: {
+            template: "{{group}}"
+          },
+    
+          resultContainer:null, 
+
+          maxItemPerGroup: 5,
+          backdrop: false,
+          backdropOnFocus: false,
+          emptyTemplate: 'No result for "{{query}}"',
+          source: {
+            general: {
+              data: data.general
+            },
+            Andflares: {
+              data: data.Andflares,
+             
+            }
+          },
+          callback: {
+            onClickAfter: function(node, a, item, event) {
+              // href key gets added inside item from options.href configuration
+              alert(item.href);
+            }
+          },
+          debug: true
+        });
+    </script>
   </body>
 </html>
