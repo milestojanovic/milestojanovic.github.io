@@ -889,7 +889,7 @@ body {
   top: 0;
   border-radius: 4px;
 }
-.tooltip-static::before {
+.notification .tooltip-static::before {
   content: "";
   position: absolute;
   left: 100%;
