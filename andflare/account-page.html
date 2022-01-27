@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Andflare - Front page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/jquery.typeahead.min.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="front-page bg1 scroll">
+      <div class="front-navigation">
+        <div class="search-form">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ···
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Example one</a>
+              <a class="dropdown-item" href="#">Example two</a>
+              <a class="dropdown-item" href="#">Example three</a>
+            </div>
+          </div>
+          <!-- <form>
+            <div class="from-group">
+              <img src="img/search-white.svg" />
+              <div class="blur-bg"></div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search Andflare"
+                aria-label="search"
+                aria-describedby="search"
+              />
+            </div>
+          </form> -->
+          <form class="navbar-form navbar-left search-form">
+            <div class="typeahead__container">
+              <div class="typeahead__field">
+                <span class="typeahead__button">
+                  <button class="btn btn-default" type="submit">
+                    <span class="typeahead__search-icon"></span>
+                  </button>
+                </span>
+                <span class="typeahead__query">
+                  <span class="typeahead__cancel-button"></span
+                  ><input
+                    class="js-typeahead"
+                    name="q"
+                    type="search"
+                    autofocus=""
+                    autocomplete="off"
+                    placeholder="Search Andflare"
+                  />
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="nav-items">
+          <a href="#">Help</a>
+          <a href="#">Products</a>
+          <a href="#">Company</a>
+          <a href="#" data-toggle="modal" data-target="#signupModal">Sign up</a>
+          <a href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
+        </div>
+      </div>
+
+      <div class="font-page-content">
+        <img src="img/logo-white.svg" width="150px" />
+        <h1 class="mb-4">
+          Make stuff, look at stuff, talk about stuff, find your people
+        </h1>
+
+        <form class="form-inline" id="topicForm" action="" method="POST">
+          <div class="form-group username">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              aria-describedby="username"
+              value=""
+              placeholder="username"
+            />
+          </div>
+          <div class="mb-3">
+            <a class="notification justify-content-center buy-caffe" href="#"
+              ><strong>☕</strong>
+              <span class="tooltip-static">You will pay £4</span></a
+            >
+          </div>
+          <div class="pannel-radio-button">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios1"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="exampleRadios1">
+                coffee
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios2"
+                value="option2"
+              />
+              <label class="form-check-label" for="exampleRadios2">
+                pizza
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios3"
+                value="option3"
+              />
+              <label class="form-check-label" for="exampleRadios3">
+                beer
+              </label>
+            </div>
+          </div>
+          <div class="pannel-radio-button">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios11"
+                  value="option11"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios11">
+                  1
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios21"
+                  value="option21"
+                />
+                <label class="form-check-label" for="exampleRadios21">
+                  3
+                </label>
+              </div>
+              <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios31"
+                    value="option31"
+                  />
+                  <label class="form-check-label" for="exampleRadios31">
+                    5
+                  </label>
+                </div>
+                <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios32"
+                      value="option32"
+                    />
+                    <label class="form-check-label" for="exampleRadios32">
+                    3
+                    </label>
+                  </div>
+            </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Leave a comment"
+            ></textarea>
+          </div>
+          <div class="form-group email">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              aria-describedby="email"
+              value=""
+              placeholder="enter"
+            />
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a
+                type="submit"
+                id="btnFetch"
+                data-toggle="modal"
+                data-target="#checkout"
+                class="btn btn-primary btn-green"
+              >
+                One time
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a
+                type="submit"
+                id="btnFetch2"
+                data-toggle="modal"
+                data-target="#checkout"
+                class="btn btn-primary btn-green"
+              >
+                <span class="tooltip-static">/month</span>
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <h2 class="trending-title">
+        <a href="#" class="user-posted"
+          >Posted by fosterfolker <img src="img/user.png"
+        /></a>
+      </h2>
+
+      <a class="down-stripe" href="#">
+        https://example.com/
+      </a>
+      <div class="big-profile-image">
+        <img src="img/profile-image.png" />
+      </div>
+    </div>
+    <div class="page-content container row mx-auto">
+      <div class="col-md-12">
+        <div class="text-intro">
+          Raw texts description if added
+          <br /><br /><br /><br /><br />
+        </div>
+      </div>
+      <div class="col-md-12 row justify-content-center">
+        <div class="col-md-3">
+          <div class="card-line ">
+            <h4>
+              <a href="#" data-toggle="modal" data-target="#shareModal"
+                >Share</a
+              >
+            </h4>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ···
+              </button>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="dropdownMenuButton"
+                style=""
+              >
+                <a class="dropdown-item" href="#">Example one</a>
+                <a class="dropdown-item" href="#">Example two</a>
+                <a class="dropdown-item" href="#">Example three</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+    <div
+      class="modal fade signup-login"
+      id="checkout"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="checkoutLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="checkoutLabel">Prime Gaming Lot</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-check">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <p class="flex">
+                    <label> Credit card</label>
+                  </p>
+                </label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  value="creadit-card-fields"
+                />
+                <div class="creadit-card-fields">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Number"
+                      aria-label="Number"
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="MM"
+                      aria-label="MM"
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="YY"
+                      aria-label="YY"
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="CVV"
+                      aria-label="CVV"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <p class="flex">
+                    <label>Paypal</label>
+                    <small>Learn about exporting members</small>
+                  </p>
+                </label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  <p class="flex">
+                    <label> Visa</label>
+                    <small>Learn about exporting members</small>
+                  </p>
+                </label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault3"
+                />
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  <p class="flex">
+                    <strong> 293€ cash wallet available</strong>
+                  </p>
+                </label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault4"
+                />
+              </div>
+              <br />
+              <button type="submit" class="btn btn-primary btn-green">
+                Pay 29€
+              </button>
+            </form>
+            <div class="down-part">
+              <img src="img/logo-purple.svg" />
+              <span>Learn about exporting <br />about exporting members.</span>
+            </div>
+          </div>
+          <div class="modal-footer ">
+            <span class="tooltip-static">New</span>
+            <a href="#">Instagram <img src="img/ARROW-UP-RIGHT-ICON.svg"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade signup-login"
+      id="shareModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="shareModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="shareModalLabel">Prime Gaming Lot</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="mb-4">
+              <button type="submit" class="btn btn-primary btn-green">
+                Copy sharable link
+              </button>
+              <small id="emailHelp" class="form-text text-muted"
+                ><a href="#"
+                  ><img src="img/question-circle.svg" />Learn about exporting
+                  members.</a
+                ></small
+              >
+            </form>
+            <form>
+              <button type="submit" class="btn btn-primary btn-green">
+                Tweet this
+              </button>
+              <small id="emailHelp" class="form-text text-muted"
+                ><a href="#"
+                  ><img src="img/question-circle.svg" />Learn about exporting
+                  members.</a
+                ></small
+              >
+            </form>
+            <div class="down-part">
+              <img src="img/logo-purple.svg" />
+              <span>Learn about exporting <br />about exporting members.</span>
+            </div>
+          </div>
+          <div class="modal-footer ">
+            <span class="tooltip-static">New</span>
+            <a href="#">Instagram <img src="img/ARROW-UP-RIGHT-ICON.svg"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.typeahead.min.js"></script>
+
+    <script>
+      var data = {
+        general: [
+          "Belhaven Black Scottish Stout",
+          "Guinness Draught Bottle",
+          "Guinness Extra Stout",
+          "Guinness Pub Draught",
+          "Murphys Irish Stout",
+          "Muskoka Chocolate Cranberry",
+          "Sleeman Fine Porter"
+        ],
+        Andflares: [
+          "Boxer Watermelon",
+          "Bud Light Lime Lime-a-rita",
+          "Bud Light Lime Mang-o-rita",
+          "Bud Light Lime Straw-ber-rita",
+          "Colt 45",
+          "DJ Trotters Flirty Daiquiri",
+          "DJ Trotters Lolita",
+          "Four Loko Black Cherry",
+          "Four Loko Fruit Punch",
+          "Four Loko Grape",
+          "Four Loko Lemonade",
+          "Four Loko Peach",
+          "Four Loko Watermelon",
+          "Kensington Watermelon Wheat",
+          "Mad Jack",
+          "Mickeys",
+          "Mojo Fruit Punch",
+          "Mojo Shot Blue Lagoon",
+          "Mojo Shot Melon Ball",
+          "Mojo Shot Sourberry",
+          "Mojo Strawberry & Kiwi",
+          "Mons Abbey Blonde",
+          "Mons Abbey Witte",
+          "Olde English 800",
+          "Pepito Sangria",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Poppers Cran Ice",
+          "Poppers Hard Ice",
+          "Poppers Orange Smoothie",
+          "Poppers Pink",
+          "Poppers Ricco Sangria",
+          "Poppers Wild Ice",
+          "Seagram Iced Lemon Tea",
+          "Seagram Lemon Lime",
+          "Seagram Orange Mango",
+          "Seagram Wildberry",
+          "Seagram Wildberry Extra 6.9",
+          "Twisted Tea",
+          "Wellington Iron Duke"
+        ]
+      };
+
+      typeof $.typeahead === "function" &&
+        $.typeahead({
+          input: ".js-typeahead",
+          minLength: 1,
+          maxItem: false,
+          order: "asc",
+          hint: true,
+
+          group: {
+            template: "{{group}}"
+          },
+
+          resultContainer: null,
+
+          maxItemPerGroup: 5,
+          backdrop: false,
+          backdropOnFocus: false,
+          emptyTemplate: 'No result for "{{query}}"',
+          source: {
+            general: {
+              data: data.general
+            },
+            Andflares: {
+              data: data.Andflares
+            }
+          },
+          callback: {
+            onClickAfter: function(node, a, item, event) {
+              // href key gets added inside item from options.href configuration
+              alert(item.href);
+            }
+          },
+          debug: true
+        });
+    </script>
+  </body>
+</html>
