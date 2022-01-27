@@ -1367,9 +1367,10 @@ body {
   justify-content: center;
 }
 input:focus {
-  box-shadow: none !important;
-  border: 1px solid #3744e1 !important;
-  outline: 1px solid #3744e1 !important;
+  -webkit-box-shadow: 0 0 0 2px #d9e0ff !important;
+  box-shadow: 0 0 0 2px #d9e0ff !important;
+  border: 0 !important;
+  outline: none !important;
 }
 .dropdown-menu {
   min-width: 220px;
