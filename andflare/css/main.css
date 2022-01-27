@@ -40,7 +40,8 @@ html {
   padding: 10px;
   color: white;
   font-size: 18px;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
+  text-shadow: 0px ​1px 3px rgba(0, 0, 0, 0.42);
+  
   z-index: 10;
 }
 .relative.down-stripe {
@@ -88,7 +89,7 @@ html {
   color: white;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
   text-align: center;
-  width: 400px;
+  width: 367px;
 }
 .font-page-content h1 {
   font-size: 28px;
@@ -100,10 +101,10 @@ html {
   border: 0;
   color: white;
   padding: 21px 13px;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
   padding-left: 125px;
   color: white;
   font-size: 17px;
+  letter-spacing: 1px !important;
 }
 .font-page-content input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -132,14 +133,16 @@ html {
   left: 11px;
   top: 8px;
 }
+
+
 .font-page-content button {
-  font-weight: 400;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.42);
-  font-size: 16px;
-  display: block;
-  width: 100%;
-  border: 0;
-  padding: 8px;
+    font-weight: 500;
+    text-shadow: 0px 1px 3px rgb(0 0 0 / 42%);
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 12px;
 }
 .or {
   position: relative;
@@ -207,6 +210,7 @@ html {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  max-height: 33px;
 }
 
 .front-navigation .nav-items a {
@@ -231,7 +235,7 @@ html {
   align-items: center;
   width: 100%;
 }
-.search-form input {
+body .search-form input {
   font-weight: 400;
   background: rgba(255, 255, 255, 0.3);
   padding: 20px 13px;
@@ -242,6 +246,7 @@ html {
   z-index: 2;
   border: 0;
   position: relative;
+  padding-left: 42px !important;
 }
 .search-form .from-group {
   display: inline-block;
@@ -289,18 +294,26 @@ html {
   flex-direction: column;
   justify-content: center;
 }
+.trending-title a{
+  color: white;
+}
+.trending-title a:hover{
+  text-decoration: none;
+}
 .trending-title img {
   margin-right: 5px;
   width: 20px;
 }
-.trending-title span {
-  width: 100%;
+.trending-title .user-posted {
+  width: 250px;
   text-align: right;
   margin-top: -19px;
   font-size: 14px;
-  margin-right: 11%;
+  margin-right: 0;
+  position: absolute;
+  right: 5.5%;
 }
-.trending-title span img {
+.trending-title .user-posted img {
   margin-right: 0;
   margin-left: 5px;
   border-radius: 5px;
@@ -310,7 +323,7 @@ html {
   margin: 0 auto;
 }
 .trending-card {
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 15px 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -338,6 +351,7 @@ html {
   background-size: cover;
   background-position: center;
   flex: 1;
+  border-radius: 8px;
 }
 .trending-card .grid-images div:first-child {
   margin-right: 5px;
@@ -355,11 +369,13 @@ html {
   margin-top: 15px;
   display: block;
   font-weight: 500;
+  border-radius: 6px;
 }
 
 .kaka {
   background: #765322;
   color: white;
+  border: 1px solid #866438;
 }
 .kaka button {
   color: #765322;
@@ -368,6 +384,7 @@ html {
 .red {
   background: #802815;
   color: white;
+  border: 1px solid #923d2d;
 }
 .red button {
   color: #802815;
@@ -376,6 +393,7 @@ html {
 .orange {
   background: #fd9e07;
   color: #000;
+  border: 1px solid #b1771c;
 }
 .orange button {
   background: #000;
@@ -384,6 +402,7 @@ html {
 .kaka-light {
   background: #805d22;
   color: white;
+  border: 1px solid #8c6837;
 }
 .kaka-light button {
   background: #fff;
@@ -392,6 +411,7 @@ html {
 .geen-yellow {
   background: #a38c27;
   color: black;
+  border: 1px solid #b59e3c;
 }
 .geen-yellow button {
   color: #a38c27;
@@ -400,6 +420,7 @@ html {
 .pink {
   background: #e51140;
   color: white;
+  border: 1px solid #f42d57;
 }
 .pink button {
   background: #fff;
@@ -408,6 +429,7 @@ html {
 .orange-dark {
   background: #d26d03;
   color: #000;
+  border: 1px solid #df8122;
 }
 .orange-dark button {
   background: #000;
@@ -416,6 +438,7 @@ html {
 .green {
   background: #617324;
   color: white;
+  border: 1px solid #7c843e;
 }
 .green button {
   background: #fff;
@@ -933,13 +956,16 @@ body {
   background-color: none !important;
 }
 .search-form .typeahead__button button{
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: transparent !important;
   color: white;
   border: 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   height: 100%;
   padding-left: 13px;
+}
+.search-form .typeahead__button button{
+  margin-right: -40px;
 }
 .typeahead__container *{
   font-size: 18px;
@@ -966,6 +992,11 @@ body {
 }
 .search-banner .middle-form{
   justify-content: center;
+}
+input:focus{
+  box-shadow: none !important;
+  border: 0 !important;
+  outline: 1px solid #3744e1 !important;
 }
 @media only screen and (max-width: 1024px) {
   .search-form .from-group {
