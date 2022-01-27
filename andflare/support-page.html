@@ -90,21 +90,11 @@
 
       <div class="font-page-content">
         <img src="img/logo-white.svg" width="150px" />
-        <h1>More stuff, look at stuff here</h1>
+        <h1 class="mb-4">
+          Make stuff, look at stuff, talk about stuff, find your people
+        </h1>
 
         <form class="form-inline" id="topicForm" action="" method="POST">
-          <div class="form-check form-switch">
-            <span class="price-label"><span>93€</span></span>
-            <label class="form-check-label" for="flexSwitchCheckChecked"
-              >One time</label
-            >
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="flexSwitchCheckChecked"
-              checked
-            />
-          </div>
           <div class="form-group username">
             <input
               type="text"
@@ -115,6 +105,102 @@
               placeholder="username"
             />
           </div>
+          <div class="mb-3">
+            <a class="notification justify-content-center buy-caffe" href="#"
+              ><strong>☕</strong>
+              <span class="tooltip-static">You will pay £4</span></a
+            >
+          </div>
+          <div class="pannel-radio-button">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios1"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="exampleRadios1">
+                coffee
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios2"
+                value="option2"
+              />
+              <label class="form-check-label" for="exampleRadios2">
+                pizza
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios3"
+                value="option3"
+              />
+              <label class="form-check-label" for="exampleRadios3">
+                beer
+              </label>
+            </div>
+          </div>
+          <div class="pannel-radio-button">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios11"
+                  value="option11"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios11">
+                  1
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios21"
+                  value="option21"
+                />
+                <label class="form-check-label" for="exampleRadios21">
+                  3
+                </label>
+              </div>
+              <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios31"
+                    value="option31"
+                  />
+                  <label class="form-check-label" for="exampleRadios31">
+                    5
+                  </label>
+                </div>
+                <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios32"
+                      value="option32"
+                    />
+                    <label class="form-check-label" for="exampleRadios32">
+                    3
+                    </label>
+                  </div>
+            </div>
           <div class="form-group">
             <textarea
               class="form-control"
@@ -133,19 +219,31 @@
               placeholder="enter"
             />
           </div>
-          <h2 class="text-left">
-            Make stuff, shrot ipsum dol presentation look at stuffrun talk about
-            stuff, find youreye example lorem ipsum dolo.
-          </h2>
-          <a
-            type="submit"
-            id="btnFetch"
-            data-toggle="modal"
-            data-target="#checkout"
-            class="btn btn-primary btn-green"
-          >
-            Buy
-          </a>
+          <div class="row">
+            <div class="col-md-6">
+              <a
+                type="submit"
+                id="btnFetch"
+                data-toggle="modal"
+                data-target="#checkout"
+                class="btn btn-primary btn-green"
+              >
+                One time
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a
+                type="submit"
+                id="btnFetch2"
+                data-toggle="modal"
+                data-target="#checkout"
+                class="btn btn-primary btn-green"
+              >
+                <span class="tooltip-static">/month</span>
+                Subscribe
+              </a>
+            </div>
+          </div>
         </form>
       </div>
       <h2 class="trending-title">
@@ -162,95 +260,20 @@
       </div>
     </div>
     <div class="page-content container row mx-auto">
-      <div class="col-md-9">
+      <div class="col-md-12">
         <div class="text-intro">
           Raw texts description if added
-          <br /><br /><br /><br /><br /><br /><br /><br />
+          <br /><br /><br /><br /><br />
         </div>
-        <div class="card-line">
-          <h4>
-            Your can also support me with
-            <label class="red">a ☕ coffee froe £3</label> for example
-          </h4>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ···
-            </button>
-            <div
-              class="dropdown-menu dropdown-menu-right"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <a class="dropdown-item" href="#">Example one</a>
-              <a class="dropdown-item" href="#">Example two</a>
-              <a class="dropdown-item" href="#">Example three</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-line">
-          <img src="img/sample-image.png" />
-          <h4>Thanks for your amazing works</h4>
-          <span class="price-label"><span>93€</span></span>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ···
-            </button>
-            <div
-              class="dropdown-menu dropdown-menu-right"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <a class="dropdown-item" href="#">Example one</a>
-              <a class="dropdown-item" href="#">Example two</a>
-              <a class="dropdown-item" href="#">Example three</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-line">
-          <img src="img/sample-image.png" />
-          <h4>Thanks for your amazing works</h4>
-          <span class="price-label"><span>93€</span></span>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ···
-            </button>
-            <div
-              class="dropdown-menu dropdown-menu-right"
-              aria-labelledby="dropdownMenuButton"
-              style=""
-            >
-              <a class="dropdown-item" href="#">Example one</a>
-              <a class="dropdown-item" href="#">Example two</a>
-              <a class="dropdown-item" href="#">Example three</a>
-            </div>
-          </div>
-        </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
-      <div class="col-md-3">
-        <div class="list-group mb-4 p-0">
-          <div class="card-line mb-0">
-            <h5 class="p-0 mb-0 flex-1">learn HM Surf</h5>
-
+      <div class="col-md-12 row justify-content-center">
+        <div class="col-md-3">
+          <div class="card-line ">
+            <h4>
+              <a href="#" data-toggle="modal" data-target="#shareModal"
+                >Share</a
+              >
+            </h4>
             <div class="dropdown">
               <button
                 class="btn btn-secondary"
@@ -273,69 +296,8 @@
               </div>
             </div>
           </div>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action flex-column align-items-start"
-          >
-            <p class="mb-1">
-              Donec id elit non mi porta gravida at eget metus. Maecenas sed
-              diam eget risus varius blandit.
-            </p>
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action flex-column align-items-start"
-          >
-            <p class="mb-1">
-              Donec id elit non mi porta gravida at eget metus. Maecenas sed
-              diam eget risus varius blandit.
-            </p>
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action flex-column align-items-start"
-          >
-            <p class="mb-1">
-              Donec id elit non mi porta gravida at eget metus. Maecenas sed
-              diam eget risus varius blandit.
-            </p>
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action flex-column align-items-start"
-          >
-            <p class="mb-1">
-              Donec id elit non mi porta gravida at eget metus. Maecenas sed
-              diam eget risus varius blandit.
-            </p>
-          </a>
         </div>
-        <div class="card-line">
-          <h4>
-            <a href="#" data-toggle="modal" data-target="#shareModal">Share</a>
-          </h4>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ···
-            </button>
-            <div
-              class="dropdown-menu dropdown-menu-right"
-              aria-labelledby="dropdownMenuButton"
-              style=""
-            >
-              <a class="dropdown-item" href="#">Example one</a>
-              <a class="dropdown-item" href="#">Example two</a>
-              <a class="dropdown-item" href="#">Example three</a>
-            </div>
-          </div>
-        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
     </div>
     <div
