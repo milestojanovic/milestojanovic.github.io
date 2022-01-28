@@ -1367,8 +1367,8 @@ body {
   justify-content: center;
 }
 input:focus {
-  -webkit-box-shadow: 0 0 0 2px #d9e0ff !important;
-  box-shadow: 0 0 0 2px #d9e0ff !important;
+  -webkit-box-shadow:0 0 0 2px rgb(217 224 255 / 60%) !important
+  box-shadow:0 0 0 2px rgb(217 224 255 / 60%) !important
   border: 0 !important;
   outline: none !important;
 }

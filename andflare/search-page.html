@@ -38,29 +38,32 @@
               ><label>22</label>
               <span class="tooltip-static">Pinned items and+</span></a
             >
-            <form class="navbar-form navbar-left search-form justify-content-center search-bar">
-                <div class="typeahead__container">
-                  <div class="typeahead__field">
-                    <span class="typeahead__button">
-                      <button class="btn btn-default" type="submit">
-                        <span class="typeahead__search-icon"></span>
-                      </button>
-                    </span>
-                    <span class="typeahead__query">
-                      <span class="typeahead__cancel-button"></span
-                      ><input
-                        class="js-typeahead"
-                        name="q"
-                        type="search"
-                        autofocus=""
-                        autocomplete="off"
-                        placeholder="Find what they do"
-                      />
-                    </span>
-                  </div>
-                  
+            <form
+              class="navbar-form navbar-left search-form justify-content-center search-bar"
+            >
+              <div class="typeahead__container">
+                <div class="typeahead__field">
+                  <span class="typeahead__button">
+                    <button class="btn btn-default" type="submit">
+                      <span class="typeahead__search-icon"></span>
+                    </button>
+                  </span>
+                  <span class="typeahead__query">
+                    <span class="typeahead__cancel-button"></span
+                    ><input
+                      class="js-typeahead"
+                      name="q"
+                      type="search"
+                      autofocus=""
+                      autocomplete="off"
+                      placeholder="Find what they do"
+                    />
+                  </span>
                 </div>
-              </form>
+              </div>
+          
+            </form>
+           
           </div>
           <div class="search-form nav-menu">
             <div class="dropdown">
@@ -87,31 +90,34 @@
         </div>
         <div class="middle-content">
           <h1>Make stuff, look at stuff, talk weird stuff, find you people</h1>
-     
-              <form class="navbar-form navbar-left search-form middle-form">
-                  <div class="typeahead__container">
-                    <div class="typeahead__field">
-                      <span class="typeahead__button">
-                        <button class="btn btn-default" type="submit">
-                          <span class="typeahead__search-icon"></span>
-                        </button>
-                      </span>
-                      <span class="typeahead__query">
-                        <span class="typeahead__cancel-button"></span
-                        ><input
-                          class="js-typeahead"
-                          name="q"
-                          type="search"
-                          autofocus=""
-                          autocomplete="off"
-                          placeholder="Find what they do"
-                        />
-                      </span>
-                    </div>
-                    
-                  </div>
-                </form>
-    
+
+          <form class="navbar-form navbar-left search-form middle-form">
+            <div class="typeahead__container">
+              <div class="typeahead__field">
+                <span class="typeahead__button">
+                  <button class="btn btn-default" type="submit">
+                    <span class="typeahead__search-icon"></span>
+                  </button>
+                </span>
+                <span class="typeahead__query">
+                  <span class="typeahead__cancel-button"></span
+                  ><input
+                    class="js-typeahead"
+                    name="q"
+                    type="search"
+                    autofocus=""
+                    autocomplete="off"
+                    placeholder="Find what they do"
+                  />
+                </span>
+              </div>
+            </div>
+          </form>
+          <h2 class="trending-title mt-5">
+              <a href="#"
+                ><img src="img/DISCOVER-white.svg" /> Here's what's trending</a
+              >
+            </h2>
         </div>
       </div>
       <div class="horizontal-scroll-nav">
@@ -555,8 +561,8 @@
           group: {
             template: "{{group}}"
           },
-    
-          resultContainer:null, 
+
+          resultContainer: null,
 
           maxItemPerGroup: 5,
           backdrop: false,
@@ -567,8 +573,7 @@
               data: data.general
             },
             Andflares: {
-              data: data.Andflares,
-             
+              data: data.Andflares
             }
           },
           callback: {
